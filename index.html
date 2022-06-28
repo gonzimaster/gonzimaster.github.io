@@ -132,7 +132,7 @@
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>Don't hesitate to contact me! Drop me an email at oscargonzalezsimon@gmail.com or simply fill out the form below and I will reply to you soon!</p>
-							<form method="post" action="https://forms.gle/v64HSA4movMFkrnU9">
+							<form name="gform" id="gform" enctype="text/plain" action="https://forms.gle/v64HSA4movMFkrnU9" target="hidden_iframe" onsubmit="submitted=true;">
 								<div class="fields">
 									<div class="field">
 										<label for="entry.1643170668">Name</label>
@@ -151,6 +151,7 @@
 									<li><input type="submit" name="submit" value="Send Message" /></li>
 								</ul>
 							</form>
+							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload"if(submitted) {}"></iframe>
 							<ul class="contact">
 								<li class="icon solid fa-home">
 									Sant Cugat del Vallès, Barcelona, Spain
